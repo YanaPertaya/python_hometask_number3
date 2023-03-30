@@ -9,4 +9,19 @@
 # 3
 # -> 1
 
+import random
+
+n = int(input("Введите количество числе в создаваемом массиве: "))
+array = [0] * n
+for i in range(n):
+    array[i] = random.randint(1,10)
+print (array)
+
+x = int(input("Введите искомое число: "))
+j = 0
+for i in array:
+    if x == i:
+        j +=1
+
+print(f"Искомое число встречалось в массиве {array} ровно {j} раз")
 
