@@ -8,3 +8,20 @@
 #     1 2 3 4 5
 #     6
 #     -> 5
+
+import random
+
+n = int(input("Введите количество чисел в создаваемом массиве: "))
+array = [0] * n
+for i in range(n):
+    array[i] = random.randint(1,10)
+print (array)
+
+x = int(input("Введите заданное число: "))
+
+close_number = array[0]
+for i in array:
+    if abs(x - i) < abs(close_number-x):
+        close_number = i
+        
+print(f"Самое близкое к {x} числу в массиве {array} является {close_number}")
