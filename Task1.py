@@ -11,7 +11,7 @@
 
 import random
 
-n = int(input("Введите количество числе в создаваемом массиве: "))
+n = int(input("Введите количество чисел в создаваемом массиве: "))
 array = [0] * n
 for i in range(n):
     array[i] = random.randint(1,10)
